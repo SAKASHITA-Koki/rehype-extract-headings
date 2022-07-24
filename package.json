@@ -1,0 +1,32 @@
+{
+  "name": "rehype-extract-headings",
+  "version": "0.0.1",
+  "description": "Rehype plugin to extract headings data that useful to make table of content",
+  "type": "module",
+  "exports": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run --coverage"
+  },
+  "author": "SAKASHITA Koki <sakashita.koki@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/hast": "^2.3.4",
+    "@types/unist": "^2.0.6",
+    "hast-util-heading-rank": "^2.1.0",
+    "hast-util-to-string": "^2.0.0",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.0"
+  },
+  "devDependencies": {
+    "c8": "^7.12.0",
+    "rehype-parse": "^8.0.4",
+    "rehype-stringify": "^9.0.3",
+    "vitest": "^0.18.1"
+  }
+}
